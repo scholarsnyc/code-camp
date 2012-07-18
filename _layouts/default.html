@@ -8,24 +8,26 @@
 	<script src="/js/bootstrap.js"></script>
 </head>
 <body>
-	<div id="main">
 
-		<header>
-			<h1> Code Camp </h1>
-
-		<nav role="navigation">
-			<ul>
-				<li><a href="/">Home</a></li>
-			</ul>
-		</nav>
-		</header>
-
+		<div class="container">
+		
+	  <div class="navbar">
+  		<div class="navbar-inner">
+  			<div class="container">
+  				<a class="brand" href="#">Code Camp</a>
+  				<div class="nav-collapse">
+  					<ul class="nav">
+  					</ul>
+  					<ul class="nav pull-right">
+  						<li><a href="/">Home</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+		
 		{{ content }}
 
-		<footer>
-			<p>&copy; The Scholars' Academy </p>
-		</footer>
-
-	</div>
-	</body>
+		</div>
+</body>
 </html>
