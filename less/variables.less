@@ -15,9 +15,7 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLittleLighter:     #ccc;
 @grayLighter:           #eee;
-@grayLightest:          #efefef;
 @white:                 #fff;
 
 
@@ -41,7 +39,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #00ADEF;
+@linkColor:             #08c;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -147,21 +145,21 @@
 
 // Navbar
 // -------------------------
-@navbarHeight:                    50px;
-@navbarBackground:                @grayLittleLighter;
-@navbarBackgroundHighlight:       @grayLightest;
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
 
-@navbarText:                      @grayDarker;
-@navbarLinkColor:                 @grayDark;
-@navbarLinkColorHover:            @linkColor;
-@navbarLinkColorActive:           @navbarLinkColor;
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      @navbarBackground;
 
 @navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;
 @navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
-@navbarSearchPlaceholderColor:    @grayLittleLighter;
+@navbarSearchPlaceholderColor:    #ccc;
 @navbarBrandColor:                @navbarLinkColor;
 
 
