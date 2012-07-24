@@ -1,0 +1,64 @@
+<h2 id="objects">Objects</h2>
+
+<p>JavaScript is an object-oriented programming language. Don&#8217;t worry about that means. If someone says stuff like that in front of you, they are trying to show off. Change the subject and ask them what cool things they&#8217;ve made recently.</p>
+
+<p>Here&#8217;s the short version: objects lets you think of your made up programming things as if they were real things. It&#8217;s kind of like having imaginary friends. Everything in JavaScript is an object. 2 is an object and so is the string &#8220;Object&#8221;. That&#8217;s great and wonderful, but let&#8217;s look at something a little more practical. Let&#8217;s talk about my dog again.</p>
+
+<pre><code>var dog;
+dog = {};
+</code></pre>
+
+<p>The variable <code>dog</code> is now a new object. That is great, wonderful, and absolutely boring. Let&#8217;s have a little more fun with this.</p>
+
+<pre><code>var dog = {
+    petName: &quot;Marley&quot;,
+    breed: &quot;Goberian&quot;,
+    age: 4,
+    greet: function () { console.log(&quot;Woof! My name is &quot; + this.name + &quot;.&quot;) }
+};
+</code></pre>
+
+<p>We&#8217;ve successfully created an object in JavaScript. We can now ask our object to do stuff.</p>
+
+<pre><code>dog.petName; // returns &quot;Marley&quot;
+dog.age; // returns 4
+dog.greet(); // prints  &quot;Woof! My name is Marley.&quot;
+</code></pre>
+
+<p>You made a JavaScript version of my dog. Awesome! Once our dog is created, it&#8217;s easy to add stuff to it.</p>
+
+<pre><code>dog.bestFriend = &quot;Bucu the Cat&quot;;
+</code></pre>
+
+<p>The dot notation is great, but we can also treat the object like an array.</p>
+
+<pre><code>dog['petName']; // returns &quot;Marley&quot;
+dog['petName'] = &quot;Warley&quot;; // I just changed it to his evil alter-ego
+</code></pre>
+
+<p>Why would you ever want to do this? Dots are amazing. Brackets and strings are a pain. It will come up. Trust me. We don&#8217;t have time to go through it right now, but I don&#8217;t want you giving me funny looks later when it comes up, so I mentioned it.</p>
+
+<p>You might of missed this, so I will repeat it because it&#8217;s worth it: You can store functions as object attributes. You can even push them into arrays. Here is an example.</p>
+
+<pre><code>var yell, dance, dog;
+
+yell = function (personThatMakesMeAngry) {
+    console.log(&quot;AHHH! &quot; + personThatMakesMeAngry + &quot;!!!&quot;);
+};
+dance = function () {console.log(&quot;*Does a happy dance!*&quot;)}
+
+var thingsToDo = [yell, dance];
+
+dog = {
+    petName: &quot;Marley&quot;,
+    yell: thingsToDo[0],
+    dance: thingsToDo[1]
+};
+
+dog.yell(&quot;Poop&quot;); // &quot;AHHH! Poop!!!&quot;
+dog.dance(); // &quot;*Does a happy dance!*&quot;
+</code></pre>
+
+<p>You would almost never do something like this in real life. I made this purposely complicated just to demonstrate a few points. We created two variables and stored some functions in them. We stored those variables in an array just for fun.</p>
+
+<p>Then we created a <code>dog</code> object that learned how to do things from that array.</p>
