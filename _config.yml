@@ -1,6 +1,4 @@
 auto: true
 server: true
-markdown: redcarpet
 pygments: true
 permalink: none
-title: Code Camp
