@@ -1,8 +1,4 @@
 auto: true
 server: true
-markdown: redcarpet
 pygments: true
-safe: true
-# source: git@github:scholarsnyc/code-camp.git
-destination: http://scholarsnyc.github.com/code-camp
 lsi: false
