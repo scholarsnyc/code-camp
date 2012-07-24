@@ -1,5 +1,6 @@
 auto: true
 server: true
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
-lsi: false
+permalink: none
+title: Code Camp
