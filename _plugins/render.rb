@@ -1,6 +1,8 @@
 module Jekyll
 
   class RenderTag < Liquid::Tag
+  	 safe true
+  
     def initialize(tag_name, file, tokens)
       super
       @file = file.strip
