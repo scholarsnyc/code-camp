@@ -1,0 +1,54 @@
+<h2 id="bendingthewebtoyourwhim">Bending the Web to Your Whim</h2>
+
+<h3 id="thejavascriptconsole">The JavaScript Console</h3>
+
+<p>Safari, Chrome, and Firefox (with the Firebug extension) all come with a JavaScript console built-in.</p>
+
+<h3 id="stupidtrickswithjavascript">Stupid Tricks with JavaScript</h3>
+
+<h4 id="alerting">Alerting</h4>
+
+<p>In the JavaScript console, type the following and hit enter.</p>
+
+<pre><code>alert(&quot;Hello world!&quot;);
+</code></pre>
+
+<h4 id="prompting">Prompting</h4>
+
+<p>That&#8217;s great, but let&#8217;s say you want to get some information from the person visiting your page.</p>
+
+{% highlight javascript %}
+prompt(&quot;What is your name?&quot;);
+{% endhighlight %}
+
+<p>If you&#8217;d like, you can provide a default response.</p>
+
+<pre><code>prompt(&quot;Who is the best teacher ever?&quot;,&quot;Mr. Kinney&quot;);
+</code></pre>
+
+<h4 id="confirming">Confirming</h4>
+
+<p>Let&#8217;s imagine for a moment that you only want a yes or no answer. Try this out:</p>
+
+<pre><code>confirm(&quot;Do you like jelly beans?&quot;);
+</code></pre>
+
+<p>Hitting &#8220;Okay&#8221; returns <code>true</code> and &#8220;Cancel&#8221; returns <code>false</code>.</p>
+
+<h4 id="logging">Logging</h4>
+
+<p>The preferred way to debugging is to quietly log to the console itself. Give this a shot:</p>
+
+<pre><code>console.log(&quot;I am a banana.&quot;);
+</code></pre>
+
+<p>As you dive deeper into JavaScript, you&#8217;ll be using this one more than the rest to figure out what&#8217;s going on in your app.</p>
+
+<h4 id="editingthecontent">Editing the Content</h4>
+
+<p>Okay, this one is fun. Go to any page and toss this little snippet into the console.</p>
+
+<pre><code>document.body.contentEditable = 'true';
+</code></pre>
+
+<p>Now, go click on any text on the page and start typing. The entire page is now editable. You can type in anything you want.</p>
