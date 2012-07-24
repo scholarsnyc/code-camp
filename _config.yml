@@ -1,5 +1,5 @@
 auto: true
 server: true
-markdown: redcarpet
+markdown: rdiscount
 pygments: true
 lsi: false
