@@ -1,4 +1,4 @@
 auto: true
 server: true
 pygments: true
-permalink: none
+permalink: /:categories/:title
