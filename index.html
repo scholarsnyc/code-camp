@@ -1,22 +1,24 @@
 ---
 layout: default
-title : Home
+title : Code Camp 2012
 ---
 
-<h1>Introduction</h1>
+<h2>Introduction</h2>
 <ul>
 {% for post in site.categories.introduction %}
 	<li><span><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
-<h1>Tools and Resources</h1>
+<h2>Tools and Resources</h2>
 <ul>
 	<li><a href="https://github.com/scholarsnyc/html-template/zipball/master" class="btn">Download Template</a></li>
 	<li><a href="/resources/additional-resources" class="btn">Additional Resources</a></li>
 </ul>
 
-<h1>Basic JavaScript</h1>
+<h2>Basic JavaScript</h2>
+<ul>
 {% for post in site.categories.javascript-basics %}
 	<li><span><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
