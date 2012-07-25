@@ -20,11 +20,9 @@ title : Code Camp 2012
 	{% for code in site.categories.code %}<li><a href="{{ code.url }}">{{ code.title }}</a></li>{% endfor %}
 </ul>
 
-<h2>Tools and Resources</h2>
+<h2>Resources</h2>
 <ul>
-	<li><a href="https://github.com/scholarsnyc/html-template/zipball/master">Download Template</a></li>
-	<li><a href="/resources/additional-resources" class="btn">Additional Resources</a></li>
-	<li><a href="/resources/text-editors-for-windows" class="btn">Text Editors for Windows</a></li>
+	{% for post in site.categories.resources %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
 </ul>
 
 <h2>Video Tutorials</h2>
