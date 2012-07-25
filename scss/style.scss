@@ -69,3 +69,19 @@ pre {
 	margin: auto;
 	width: 550px;
 }
+
+.gist {
+	pre {
+	  word-break: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+	}
+	.gist-meta {
+		background-color: darken($code-background-color, 5%) !important;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		font-size: 12px !important;
+		a {
+			color: darken($link-color, 10%) !important;
+		}
+	}
+}

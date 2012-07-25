@@ -54,3 +54,14 @@ pre {
 .container {
   margin: auto;
   width: 550px; }
+
+.gist pre {
+  word-break: normal;
+  word-wrap: normal;
+  white-space: nowrap; }
+.gist .gist-meta {
+  background-color: #eeeeee !important;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px !important; }
+  .gist .gist-meta a {
+    color: #0088bc !important; }
