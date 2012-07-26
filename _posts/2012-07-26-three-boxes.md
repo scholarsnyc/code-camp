@@ -1,6 +1,6 @@
 ---
 layout: link
-title: Three boxes
+title: Three Boxes
 link: https://github.com/scholarsnyc/three-boxes/zipball/master
 categories: links
 ---
