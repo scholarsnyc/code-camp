@@ -1,0 +1,17 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: blue;
+}
+
+.container {
+  background-color: white;
+  border: 5px dashed red;
+  padding: 1em;
+  width: 500px;
+  margin: auto;
+}
+
+#buttons {
+	margin: auto;
+	text-align: center;
+}
