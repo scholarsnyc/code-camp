@@ -1,74 +1,67 @@
 ---
 layout: default
-title : Code Camp 2012
+title : Welcome to Introduction to Programming
 ---
 
-<h2>Week Two</h2>
+<div class="row">
+	<div class="span2">
+		<p>Those strange sounds in the video? That's a baby. Ignore it.</p>
+		<iframe src="http://player.vimeo.com/video/50107281" width="550" height="412" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<p><strong>Welcome to Introduction to Programming!</strong> This is going to be a super cool elective and we're going to do lots of cool stuff over the next three months. The beginning of thise course is based off of the Code Camp summmer program that we ran last summer, but I'm adding a lot more content.</p>
+		<p>We're going to look at a few technologies over the course of the next three months. The first language we're going to learn is JavaScript, the language that powers the web.</p>
+		<h3>Things You Should Be Working on Today</h3>
+		<ul>
+			<li>Read the <a href="/introduction/introduction.html" title="An Introduction | Introduction to Programming">introduction</a> to the course.</li>
+			<li>Read <a href="/introduction/about-javascript.html" title="About JavaScript | Introduction to Programming">about JavaScript</a> and check out the examples linked to on that page.</li>
+			<li>If you're HTML skills are rusty or non-existent, visit the <a href="http://web.scholarsnyc.com" title="Introduction to Web Design">introduction on my HTML and CSS</a> and check out the <a href="https://vimeo.com/46380196">Basic HTML and CSS video</a>.</li>
+			<li>Visit the <a href="http://www.khanacademy.org/cs/tutorials/programming-basics" title="Computer Science | Khan Academy">Khan Academy's Programming Basics</a> page and fire up <a href="http://www.khanacademy.org/cs/intro-to-variables/825241936" title="Intro to Variables | Computer Science | Khan Academy">Intro to Variables</a> and <a href="http://www.khanacademy.org/cs/more-on-variables/848607462" title="More on Variables | Computer Science | Khan Academy">More on Variables</a>.</li>
+			<li>Feel free to poke around the Khan Academy site. It has a lot of great of examples of cool things you can do in JavaScript.</li>
+			<li><strong>Super Important:</strong> You must fill out <a href="https://docs.google.com/a/scholarsnyc.com/spreadsheet/viewform?formkey=dFRCNzhhdm1TNzlYdVB3b0p1bU9BalE6MQ">the reflection</a>.</li>
+		</ul>
+	</div>
+</div>
 
-<h3>Canvas and Game Creating</h3>
-<ul>
-	<li><a href="http://billmill.org/static/canvastutorial/index.html" title="Creating a Breakout Game with Canvas">Creating a Breakout Game with Canvas</a></li>
-	<li><a href="http://michalbe.blogspot.com/2010/09/simple-game-with-html5-canvas-part-1.html" title="Creating Simple Game with HTML5 Canvas">Creating Simple Game with HTML5 Canvas</a></li>
-	<li><a href="http://dev.opera.com/articles/view/html-5-canvas-the-basics/" title="HTML5 Canvas: The Basics">HTML5 Canvas: The Basics</a></li>
-	<li><a href="http://net.tutsplus.com/sessions/canvas-from-scratch/" title="Canvas From Scratch">Canvas From Scratch</a></li>
-	<li><a href="http://css.dzone.com/articles/how-write-brikbloc-game-html5" title="How to Write a BrikBloc Game With HTML5 SVG and Canvas">How to Write a BrikBloc Game With HTML5 SVG and Canvas</a></li>
-	<li><a href="https://developer.mozilla.org/en/Canvas_tutorial/" title="Canvas Tutorial">Canvas Tutorial</a></li>
-</ul>
+<div class="row">
+	<div class="span1">
+		<h2>Introduction</h2>
+		<ul>
+		{% for post in site.categories.introduction %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+		</ul>
 
-<h3>jQuery Mobile</h3>
-<ul>
-	<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-build-an-rss-reader-with-jquery-mobile-2/" title="How to Build an RSS Reader with jQuery Mobile">How to Build an RSS Reader with jQuery Mobile</a></li>
-	<li><a href="http://www.codeforest.net/jquery-mobile-tutorial-basics" title="jQuery Mobile Tutorial: Basics">jQuery Mobile Tutorial: Basics</a></li>
-	<li><a href="http://spyrestudios.com/beginners-tutorial-coding-web-apps-with-jquery-mobile/" title="Beginner’s Tutorial Coding Web Apps with jQuery Mobile">Beginner’s Tutorial Coding Web Apps with jQuery Mobile</a></li>
-	<li><a href="http://jquerymobile.com/resources/" title="jQuery Mobile Resources">jQuery Mobile Resources</a></li>
-	<li><a href="http://matt.might.net/articles/learning-javascript-in-small-bites/" title="Creating a Calculator in JavaScript">Creating a Calculator in JavaScript</a></li>
-</ul>
+		<!-- <h2>jQuery Tutorials</h2>
+		<ul>
+		<li><a href="http://docs.jquery.com/Tutorials:Getting_Started_with_jQuery" title="Tutorials:Getting Started with jQuery - jQuery JavaScript Library">Getting Started with jQuery</a></li>
+		<li><a href="http://www.jquery-tutorial.net/" title="The complete jQuery tutorial">The Complete jQuery tutorial</a></li>
+		<li><a href="http://net.tutsplus.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/" title="jQuery for Absolute Beginners: The Complete Series | Nettuts+">jQuery for Absolute Beginners: The Complete Series</a></li>
+		<li><a href="http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html" title="50+ Amazing Jquery Examples- Part1 - Noupe">50+ Amazing Jquery Examples, Part 1</a></li>
+		</ul> -->
 
-<h3>Libraries</h3>
-<ul>
-	<li><a href="http://craig.is/killing/mice">Mousetrap.js</a></li>
-	<li><a href="http://jquery.com/">jQuery</a></li>
-	<li><a href="http://d3js.org/">D3.js</a> (There is an awesome tutorial <a href="http://alignedleft.com/tutorials/d3/">here</a>.)
-	<li><a href="http://listjs.com/">List.js</a></li>
-</ul>
+		<h2>Basic JavaScript</h2>
+		<ul>
+			{% for post in site.categories.javascript-basics %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+		</ul>
 
+		<!-- <h2>Links and Repositories</h2>
+		<ul>
+			{% for post in site.categories.links %}<li><a href="{{ post.link }}">{{ post.title }}</a></li>{% endfor %}
+		</ul>
 
-<h2>Introduction</h2>
-<ul>
-{% for post in site.categories.introduction %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+		<h2>Code Samples</h2>
+		<ul>
+			{% for code in site.categories.code %}<li><a href="{{ code.url }}">{{ code.title }}</a></li>{% endfor %}
+		</ul> -->
+	</div>
+	<div class="span1">
+		<h2>Resources</h2>
+		<ul>
+			{% for post in site.categories.resources %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+		</ul>
 
-<h2>jQuery Tutorials</h2>
-<ul>
-<li><a href="http://docs.jquery.com/Tutorials:Getting_Started_with_jQuery" title="Tutorials:Getting Started with jQuery - jQuery JavaScript Library">Getting Started with jQuery</a></li>
-<li><a href="http://www.jquery-tutorial.net/" title="The complete jQuery tutorial">The Complete jQuery tutorial</a></li>
-<li><a href="http://net.tutsplus.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/" title="jQuery for Absolute Beginners: The Complete Series | Nettuts+">jQuery for Absolute Beginners: The Complete Series</a></li>
-<li><a href="http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html" title="50+ Amazing Jquery Examples- Part1 - Noupe">50+ Amazing Jquery Examples, Part 1</a></li>
-</ul>
-
-<h2>Basic JavaScript</h2>
-<ul>
-	{% for post in site.categories.javascript-basics %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-</ul>
-
-<h2>Links and Repositories</h2>
-<ul>
-	{% for post in site.categories.links %}<li><a href="{{ post.link }}">{{ post.title }}</a></li>{% endfor %}
-</ul>
-
-<h2>Code Samples</h2>
-<ul>
-	{% for code in site.categories.code %}<li><a href="{{ code.url }}">{{ code.title }}</a></li>{% endfor %}
-</ul>
-
-<h2>Resources</h2>
-<ul>
-	{% for post in site.categories.resources %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-</ul>
-
-<h2>Video Tutorials</h2>
-<ul>
-	{% for video in site.categories.videos %}<li><a href="{{ video.url }}">{{ video.title }}</a></li>{% endfor %}
-</ul>
+		<h2>Video Tutorials</h2>
+		<ul>
+			{% for video in site.categories.videos %}<li><a href="{{ video.url }}">{{ video.title }}</a></li>{% endfor %}
+		</ul>
+	</div>
+</div>
