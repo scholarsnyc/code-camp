@@ -4,63 +4,64 @@ title : Welcome to Introduction to Programming
 ---
 
 <div class="row">
-	<div class="span2">
-		<!--<iframe src="http://player.vimeo.com/video/50107281" width="550" height="412" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
-		<p><strong>Welcome to Introduction to Programming!</strong> This is going to be a super cool elective and we're going to do lots of cool stuff over the next three months. The beginning of thise course is based off of the Code Camp summmer program that we ran last summer, but I'm adding a lot more content.</p>
-		<p>We're going to look at a few technologies over the course of the next three months. The first language we're going to learn is JavaScript, the language that powers the web.</p>
-		<!--<h3>Things You Should Be Working on Today</h3>-->
-		<!--<ul>-->
-			<!--<li>Read the <a href="/introduction/introduction.html" title="An Introduction | Introduction to Programming">introduction</a> to the course.</li>-->
-			<!--<li>Read <a href="/introduction/about-javascript.html" title="About JavaScript | Introduction to Programming">about JavaScript</a> and check out the examples linked to on that page.</li>-->
-			<!--<li>If you're HTML skills are rusty or non-existent, visit the <a href="http://web.scholarsnyc.com" title="Introduction to Web Design">introduction on my HTML and CSS</a> and check out the <a href="https://vimeo.com/46380196">Basic HTML and CSS video</a>.</li>-->
-			<!--<li>Visit the <a href="http://www.khanacademy.org/cs/tutorials/programming-basics" title="Computer Science | Khan Academy">Khan Academy's Programming Basics</a> page and fire up <a href="http://www.khanacademy.org/cs/intro-to-variables/825241936" title="Intro to Variables | Computer Science | Khan Academy">Intro to Variables</a> and <a href="http://www.khanacademy.org/cs/more-on-variables/848607462" title="More on Variables | Computer Science | Khan Academy">More on Variables</a>.</li>-->
-			<!--<li>Feel free to poke around the Khan Academy site. It has a lot of great of examples of cool things you can do in JavaScript.</li>-->
-			<!--<li><strong>Super Important:</strong> You must fill out <a href="https://docs.google.com/a/scholarsnyc.com/spreadsheet/viewform?formkey=dFRCNzhhdm1TNzlYdVB3b0p1bU9BalE6MQ">the reflection</a>.</li>-->
-		<!--</ul>-->
-	</div>
+  <div class="span2">
+    <!--<iframe src="http://player.vimeo.com/video/50107281" width="550" height="412" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+    <p><strong>Welcome to Introduction to Programming!</strong> This is going to be a super cool elective and we're going to do lots of cool stuff over the next three months. The beginning of thise course is based off of the Code Camp summmer program that we ran last summer, but I'm adding a lot more content.</p>
+    <p>We're going to look at a few technologies over the course of the next three months. The first language we're going to learn is JavaScript, the language that powers the web.</p>
+    <!--<h3>Things You Should Be Working on Today</h3>-->
+    <!--<ul>-->
+      <!--<li>Read the <a href="/introduction/introduction.html" title="An Introduction | Introduction to Programming">introduction</a> to the course.</li>-->
+      <!--<li>Read <a href="/introduction/about-javascript.html" title="About JavaScript | Introduction to Programming">about JavaScript</a> and check out the examples linked to on that page.</li>-->
+      <!--<li>If you're HTML skills are rusty or non-existent, visit the <a href="http://web.scholarsnyc.com" title="Introduction to Web Design">introduction on my HTML and CSS</a> and check out the <a href="https://vimeo.com/46380196">Basic HTML and CSS video</a>.</li>-->
+      <!--<li>Visit the <a href="http://www.khanacademy.org/cs/tutorials/programming-basics" title="Computer Science | Khan Academy">Khan Academy's Programming Basics</a> page and fire up <a href="http://www.khanacademy.org/cs/intro-to-variables/825241936" title="Intro to Variables | Computer Science | Khan Academy">Intro to Variables</a> and <a href="http://www.khanacademy.org/cs/more-on-variables/848607462" title="More on Variables | Computer Science | Khan Academy">More on Variables</a>.</li>-->
+      <!--<li>Feel free to poke around the Khan Academy site. It has a lot of great of examples of cool things you can do in JavaScript.</li>-->
+      <!--<li><strong>Super Important:</strong> You must fill out <a href="https://docs.google.com/a/scholarsnyc.com/spreadsheet/viewform?formkey=dFRCNzhhdm1TNzlYdVB3b0p1bU9BalE6MQ">the reflection</a>.</li>-->
+    <!--</ul>-->
+  </div>
 </div>
 
 <div class="row">
-	<div class="span1">
-		<h2>Introduction</h2>
-		<ul>
-		{% for post in site.categories.introduction %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-		</ul>
+  <div class="span1">
+    <h2>Introduction</h2>
+    <ul>
+    {% for post in site.categories.introduction %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
 
-		<!-- <h2>jQuery Tutorials</h2>
-		<ul>
-		<li><a href="http://docs.jquery.com/Tutorials:Getting_Started_with_jQuery" title="Tutorials:Getting Started with jQuery - jQuery JavaScript Library">Getting Started with jQuery</a></li>
-		<li><a href="http://www.jquery-tutorial.net/" title="The complete jQuery tutorial">The Complete jQuery tutorial</a></li>
-		<li><a href="http://net.tutsplus.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/" title="jQuery for Absolute Beginners: The Complete Series | Nettuts+">jQuery for Absolute Beginners: The Complete Series</a></li>
-		<li><a href="http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html" title="50+ Amazing Jquery Examples- Part1 - Noupe">50+ Amazing Jquery Examples, Part 1</a></li>
-		</ul> -->
+    <!-- <h2>jQuery Tutorials</h2>
+    <ul>
+    <li><a href="http://docs.jquery.com/Tutorials:Getting_Started_with_jQuery" title="Tutorials:Getting Started with jQuery - jQuery JavaScript Library">Getting Started with jQuery</a></li>
+    <li><a href="http://www.jquery-tutorial.net/" title="The complete jQuery tutorial">The Complete jQuery tutorial</a></li>
+    <li><a href="http://net.tutsplus.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/" title="jQuery for Absolute Beginners: The Complete Series | Nettuts+">jQuery for Absolute Beginners: The Complete Series</a></li>
+    <li><a href="http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html" title="50+ Amazing Jquery Examples- Part1 - Noupe">50+ Amazing Jquery Examples, Part 1</a></li>
+    </ul> -->
 
-		<h2>Basic JavaScript</h2>
-		<ul>
-			{% for post in site.categories.javascript-basics %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-		</ul>
+    <h2>Basic JavaScript</h2>
+    <ul>
+      {% for post in site.categories.javascript-basics %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+    </ul>
 
-		<!-- <h2>Links and Repositories</h2>
-		<ul>
-			{% for post in site.categories.links %}<li><a href="{{ post.link }}">{{ post.title }}</a></li>{% endfor %}
-		</ul>
+    <!-- <h2>Links and Repositories</h2>
+    <ul>
+      {% for post in site.categories.links %}<li><a href="{{ post.link }}">{{ post.title }}</a></li>{% endfor %}
+    </ul>
 
-		<h2>Code Samples</h2>
-		<ul>
-			{% for code in site.categories.code %}<li><a href="{{ code.url }}">{{ code.title }}</a></li>{% endfor %}
-		</ul> -->
-	</div>
-	<div class="span1">
-		<h2>Resources</h2>
-		<ul>
-			{% for post in site.categories.resources %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-		</ul>
+    <h2>Code Samples</h2>
+    <ul>
+      {% for code in site.categories.code %}<li><a href="{{ code.url }}">{{ code.title }}</a></li>{% endfor %}
+    </ul> -->
 
-		<h2>Video Tutorials</h2>
-		<ul>
-			{% for video in site.categories.videos %}<li><a href="{{ video.url }}">{{ video.title }}</a></li>{% endfor %}
-		</ul>
-	</div>
+  </div>
+  <div class="span1">
+    <h2>Resources</h2>
+    <ul>
+      {% for post in site.categories.resources %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+    </ul>
+
+    <h2>Video Tutorials</h2>
+    <ul>
+      {% for video in site.categories.videos %}<li><a href="{{ video.url }}">{{ video.title }}</a></li>{% endfor %}
+    </ul>
+  </div>
 </div>
